@@ -1,0 +1,24 @@
+<% include head %>
+<div class="row">
+		<div class = 'col-sm-1'></div>
+		<div class = 'col-sm-4'>
+			<table class="table table-hover">
+  
+  <tbody>
+  <% rsGoods.forEach(function(row){%>
+    <tr>
+      <td><img src="../<%-row.goodsimg%>"></td>
+      <td><%-row.goodsname%></td>
+
+    </tr>
+    <% }) %>
+  
+  </tbody>
+</table>
+
+		</div>
+		<div class = 'col-sm-6'>地图</div>
+		<div class = 'col-sm-1'></div>
+</div>
+</body>
+</html>
